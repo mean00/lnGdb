@@ -1,3 +1,6 @@
 [submodule "lnArduino"]
 	path = lnArduino
 	url = https://github.com/mean00/lnArduino.git
+[submodule "packages/gdbstub"]
+	path = packages/gdbstub
+	url = https://github.com/daniel5151/gdbstub.git

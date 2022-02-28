@@ -1,0 +1,28 @@
+[package]
+name = "gdbstub-nostd"
+version = "0.1.0"
+authors = ["Daniel Prilik <danielprilik@gmail.com>"]
+edition = "2021"
+
+[lib]
+name = "foo"
+path = "lib/lib.rs"
+crate-type = ["staticlib"] # Creates static lib
+
+
+[dependencies]
+gdbstub = { path = "gdbstub", default-features = false }
+gdbstub_arch = { path = "gdbstub/gdbstub_arch", default-features = false }
+
+libc = { version = "0.2", default-features = false }
+log = { version = "0.4", features = ["release_max_level_off"] }
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+opt-level = 's'  # Optimize for size.
+lto = true
+codegen-units = 1
+debug = true

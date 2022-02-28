@@ -33,6 +33,8 @@ USE_LIBRARY(tinyUsb)
 
 include(${AF_FOLDER}/libraries/tinyUsb/tiny.cmake)
 
+add_subdirectory(packages)
+
 GENERATE_GD32_FIRMWARE(lnGdb src/main.cpp)    
 target_link_libraries(lnGdb gd32_usb_usbd rnArduino)    
         
