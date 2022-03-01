@@ -1,5 +1,5 @@
 IF(1) # ARM
-    IF(1)
+    IF(0)
         SET(LN_ARCH            "ARM" CACHE INTERNAL "")
         SET(LN_MCU             "M3"  CACHE INTERNAL "")
         SET(LN_MCU_FLASH_SIZE  128   CACHE INTERNAL "")

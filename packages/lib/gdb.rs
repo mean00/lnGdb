@@ -1,3 +1,4 @@
+#![no_std]
 use gdbstub::common::{Signal, Tid};
 use gdbstub::target;
 use gdbstub::target::ext::base::multithread::{MultiThreadBase, MultiThreadResume};
