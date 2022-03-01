@@ -29,12 +29,11 @@ include_directories(${CMAKE_SOURCE_DIR}/include)
 add_subdirectory(${AF_FOLDER})
 
 include(${AF_FOLDER}/setup.cmake)
-USE_LIBRARY(tinyUsb)        
+USE_LIBRARY(tinyUsb)
 
 include(${AF_FOLDER}/libraries/tinyUsb/tiny.cmake)
 
 add_subdirectory(packages)
 
-GENERATE_GD32_FIRMWARE(lnGdb src/main.cpp)    
-target_link_libraries(lnGdb gd32_usb_usbd rnArduino)    
-        
+GENERATE_GD32_FIRMWARE(lnGdb src/main.cpp)
+target_link_libraries(lnGdb gd32_usb_usbd rnGdbStub rnArduino)    
