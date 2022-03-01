@@ -1,7 +1,7 @@
 [package]
-name = "gdbstub-nostd"
-version = "0.1.0"
-authors = ["Daniel Prilik <danielprilik@gmail.com>"]
+name = "rnGdbStub"
+version = "0.0.1"
+authors = ["mean00"]
 edition = "2021"
 
 [lib]
@@ -14,8 +14,8 @@ crate-type = ["staticlib"] # Creates static lib
 gdbstub = { path = "gdbstub", default-features = false }
 gdbstub_arch = { path = "gdbstub/gdbstub_arch", default-features = false }
 
-libc = { version = "0.2", default-features = false }
-log = { version = "0.4", features = ["release_max_level_off"] }
+#libc = { version = "0.2", default-features = false }
+#log = { version = "0.4", features = ["release_max_level_off"] }
 
 [profile.dev]
 panic = "abort"

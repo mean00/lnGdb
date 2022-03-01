@@ -33,28 +33,12 @@ dependencies = [
 ]
 
 [[package]]
-name = "gdbstub-nostd"
-version = "0.1.0"
-dependencies = [
- "gdbstub",
- "gdbstub_arch",
- "libc",
- "log",
-]
-
-[[package]]
 name = "gdbstub_arch"
 version = "0.2.2"
 dependencies = [
  "gdbstub",
  "num-traits",
 ]
-
-[[package]]
-name = "libc"
-version = "0.2.119"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "1bf2e165bb3457c8e098ea76f3e3bc9db55f87aa90d52d0e6be741470916aaa4"
 
 [[package]]
 name = "log"
@@ -85,3 +69,11 @@ name = "paste"
 version = "1.0.6"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "0744126afe1a6dd7f394cb50a716dbe086cb06e255e53d8d0185d82828358fb5"
+
+[[package]]
+name = "rnGdbStub"
+version = "0.0.1"
+dependencies = [
+ "gdbstub",
+ "gdbstub_arch",
+]

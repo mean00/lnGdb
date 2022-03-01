@@ -1,3 +1,4 @@
+#![no_std]
 use gdbstub::conn::Connection;
 
 pub struct CdcConnection {

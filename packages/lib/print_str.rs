@@ -1,3 +1,4 @@
+#![no_std]
 pub fn print_str(s: &str) {
     /*
     unsafe {

@@ -1,7 +1,7 @@
 #![no_std]
 #![no_main]
 
-extern crate libc;
+//extern crate libc;
 
 use gdbstub::stub::state_machine::GdbStubStateMachine;
 use gdbstub::stub::MultiThreadStopReason;
